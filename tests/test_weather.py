@@ -63,10 +63,8 @@ def test_filter_by_temperature_regular_values():
     assert filter_by_temperature(measurements, 9.0, 10.0) == [
                 ("Köln", 600, 10.0),("Köln", 600, 10.0),("Köln", 600, 10.0)] # Muss 3 mal
     
-    assert filter_by_temperature(measurements, 9.0, 10.0) == [
-                    ("Köln", 600, 10.0),("Köln", 600, 10.0)] # Muss 3 mal
-
-    
+    #assert filter_by_temperature(measurements, 9.0, 10.0) == [
+     #               ("Köln", 600, 10.0),("Köln", 600, 10.0)] # Muss 3 mal
 
 
 def test_average_temperature_regular_values():
